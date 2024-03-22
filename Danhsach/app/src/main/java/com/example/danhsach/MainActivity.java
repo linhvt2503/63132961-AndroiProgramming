@@ -1,8 +1,12 @@
 package com.example.danhsach;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,6 +39,18 @@ public class MainActivity extends AppCompatActivity {
         //gắn vào
         lvtenTinh.setAdapter(adapterTinh);
         //lắng nghe và xử lý ng dung tương tác
+        //gắn bộ lắng nghe
+        lvtenTinh.setOnItemClickListener(BoLangNghevaXuLy);
 
     }
+    //Tạo bộ lắng nghe và xử lý sựu kiện OnItemClick, đặt vào một biến
+    //vd: BoLangNghevaXuLy
+    AdapterView.OnItemClickListener BoLangNghevaXuLy = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            //code xử lý
+            //position là vị trí phần tử vừa được click
+            Toast.makeText(MainActivity.this,"Bạn vừa chọn vị trí:"+String.valueOf(position),Toast.LENGTH_LONG).show();
+        }
+    };
 }
