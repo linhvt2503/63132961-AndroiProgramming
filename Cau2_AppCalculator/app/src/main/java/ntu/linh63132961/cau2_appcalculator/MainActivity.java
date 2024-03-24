@@ -11,14 +11,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
+    String ptinh;
+    Double sodau;
     EditText editText1;
     EditText editText2;
     Button nutCong, nutTru, nutNhan, nutChia, nutMu2, nutPi, nutDel,
             nutAm, nutPhantram, nutPhay, nutBang, nutAc,
             nut1, nut2, nut3, nut4, nut5, nut6, nut7, nut8, nut9, nut0;
-    double v1, v2, ans;
-    boolean cong=false, tru= false, nhan=false, chia=false;
     public void timDieuKien(){
         editText1 =(EditText) findViewById(R.id.edt1);
         editText2 =(EditText) findViewById(R.id.edt2);
@@ -122,8 +122,76 @@ public class MainActivity extends AppCompatActivity {
         nutCong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                editText1.setText(editText1.getText()+"+");
             }
         });
+        nutTru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText1.setText(editText1.getText()+"-");
+            }
+        });
+        nutNhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText1.setText(editText1.getText()+"*");
+            }
+        });
+        nutChia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText1.setText(editText1.getText()+"/");
+            }
+        });
+        nutMu2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText1.setText(editText1.getText()+"^");
+            }
+        });
+        nutPi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText1.setText(editText1.getText()+"pi");
+            }
+        });
+        nutPhantram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText1.setText(editText1.getText()+"%");
+            }
+        });
+    }
+    public void XuLy(String so){
+        String text2 = editText2.getText().toString();
+        if(!text2.isEmpty()){
+            sodau=Double.parseDouble(text2);
+            ptinh = so;
+            editText2.setText("");
+        }
+    }
+    private void KetQua() {
+        String text2 = editText2.getText().toString();
+        if (!text2.isEmpty()) {
+            double sosau = Double.parseDouble(text2);
+            double kq = 0.0;
+
+            switch (ptinh) {
+                case "+":
+                    kq = sodau + sosau;
+                    break;
+                case "-":
+                    kq = sodau - sosau;
+                    break;
+                case "*":
+                    kq = sodau * sosau;
+                    break;
+                case "/":
+                    kq = sodau / sosau;
+                    break;
+            }
+
+            editText2.setText(String.valueOf(kq));
+        }
     }
 }
