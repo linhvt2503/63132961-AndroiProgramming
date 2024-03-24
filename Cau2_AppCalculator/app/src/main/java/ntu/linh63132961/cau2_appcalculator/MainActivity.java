@@ -161,15 +161,22 @@ public class MainActivity extends AppCompatActivity{
                 editText1.setText(editText1.getText()+"%");
             }
         });
+        nutBang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                KetQua();
+            }
+        });
     }
-    public void XuLy(String so){
-        String text2 = editText2.getText().toString();
-        if(!text2.isEmpty()){
-            sodau=Double.parseDouble(text2);
-            ptinh = so;
-            editText2.setText("");
-        }
-    }
+//    public void XuLy(String so){
+//        String text2 = editText2.getText().toString();
+//        if(!text2.isEmpty()){
+//            sodau=Double.parseDouble(text2);
+//            ptinh = so;
+//            editText2.setText("");
+//        }
+//    }
+
     private void KetQua() {
         String text2 = editText2.getText().toString();
         if (!text2.isEmpty()) {
