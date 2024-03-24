@@ -9,13 +9,21 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edt"
+        android:id="@+id/edt1"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="70dp"
         android:layout_margin="5dp"
         android:enabled="false"
         android:gravity="right"
         android:hint="Thực hiện phép tính" />
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:enabled="false"
+        android:gravity="right"
+        android:hint="Kết quả" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +38,8 @@
             android:layout_marginLeft="9dp"
             android:backgroundTint="#EA1A1A"
             android:text="AC"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:onClick="XuLyCong"/>
 
         <Button
             android:id="@+id/btnAm"
