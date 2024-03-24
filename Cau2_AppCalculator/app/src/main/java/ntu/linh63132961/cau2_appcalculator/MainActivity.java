@@ -12,13 +12,15 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity{
-    String ptinh;
-    Double sodau;
+    double v1, v2;
+    Double ans ;
     EditText editText1;
     EditText editText2;
-    Button nutCong, nutTru, nutNhan, nutChia, nutMu2, nutPi, nutDel,
+    Button nutCong, nutTru, nutNhan, nutChia, nutMu2, nutPi, nutLog10,
             nutAm, nutPhantram, nutPhay, nutBang, nutAc,
             nut1, nut2, nut3, nut4, nut5, nut6, nut7, nut8, nut9, nut0;
+    Boolean cong=false, tru=false, nhan=false, chia=false,
+            ptram=false,am=false,mu2=false,log10=false,pi=false;
     public void timDieuKien(){
         editText1 =(EditText) findViewById(R.id.edt1);
         editText2 =(EditText) findViewById(R.id.edt2);
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity{
         nutChia = (Button) findViewById(R.id.btnchia);
         nutPi = (Button) findViewById(R.id.btnpi);
         nutMu2 = (Button) findViewById(R.id.btnmu2);
-        nutDel = (Button) findViewById(R.id.btnDel);
+        nutLog10 = (Button) findViewById(R.id.btnLog10);
         nut0 = (Button) findViewById(R.id.btn0);
         nut1 = (Button) findViewById(R.id.btn1);
         nut2 = (Button) findViewById(R.id.btn2);
@@ -122,83 +124,70 @@ public class MainActivity extends AppCompatActivity{
         nutCong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText1.setText(editText1.getText()+"+");
+                v1 = Double.parseDouble(editText1.getText().toString());
+                nutFalse();
+                cong = true;
             }
         });
         nutTru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText1.setText(editText1.getText()+"-");
+                v1 = Double.parseDouble(editText1.getText().toString());
+                nutFalse();
+                tru = true;
             }
         });
         nutNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText1.setText(editText1.getText()+"*");
+                v1 = Double.parseDouble(editText1.getText().toString());
+                nutFalse();
+                nhan = true;
             }
         });
         nutChia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText1.setText(editText1.getText()+"/");
+                v1 = Double.parseDouble(editText1.getText().toString());
+                nutFalse();
+                chia = true;
             }
         });
         nutMu2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText1.setText(editText1.getText()+"^");
+                v1 = Double.parseDouble(editText1.getText().toString());
+                ans = v1 * v1;
+                nutBang.setEnabled(false);
+                editText2.setText(ans.toString());
+                nutFalse();
             }
         });
-        nutPi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                editText1.setText(editText1.getText()+"pi");
-            }
-        });
-        nutPhantram.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                editText1.setText(editText1.getText()+"%");
-            }
-        });
+
+        
         nutBang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                KetQua();
+                v2 = Double.parseDouble(editText1.getText().toString());
+                if(cong){
+                    ans = v1 + v2;
+                }else if (tru){
+                    ans = v1 - v2;
+                } else if (nhan) {
+                    ans = v1 * v2;
+                } else if (chia) {
+                    ans = v1 / v2;
+                }else ans = ans + 0;
+                editText2.setText(ans.toString());
+                nutBang.setEnabled(false);
             }
         });
     }
-//    public void XuLy(String so){
-//        String text2 = editText2.getText().toString();
-//        if(!text2.isEmpty()){
-//            sodau=Double.parseDouble(text2);
-//            ptinh = so;
-//            editText2.setText("");
-//        }
-//    }
-
-    private void KetQua() {
-        String text2 = editText2.getText().toString();
-        if (!text2.isEmpty()) {
-            double sosau = Double.parseDouble(text2);
-            double kq = 0.0;
-
-            switch (ptinh) {
-                case "+":
-                    kq = sodau + sosau;
-                    break;
-                case "-":
-                    kq = sodau - sosau;
-                    break;
-                case "*":
-                    kq = sodau * sosau;
-                    break;
-                case "/":
-                    kq = sodau / sosau;
-                    break;
-            }
-
-            editText2.setText(String.valueOf(kq));
-        }
+    public void nutFalse(){
+        nutCong.setEnabled(false);
+        nutTru.setEnabled(false);
+        nutNhan.setEnabled(false);
+        nutChia.setEnabled(false);
+        editText1.setText("");
     }
 }

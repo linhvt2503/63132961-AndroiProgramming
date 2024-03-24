@@ -40,12 +40,12 @@
             android:onClick="XuLyCong"/>
 
         <Button
-            android:id="@+id/btnDel"
+            android:id="@+id/btnLog10"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginLeft="9dp"
             android:backgroundTint="#4CAF50"
-            android:text="Del"
+            android:text="log10"
             android:textSize="28dp" />
 
         <Button
