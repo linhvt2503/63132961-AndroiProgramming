@@ -164,7 +164,53 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        
+        nutPi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v1 = Double.parseDouble(editText1.getText().toString());
+                ans = v1 * 3.14;
+                nutBang.setEnabled(false);
+                editText2.setText(ans.toString());
+                nutFalse();
+            }
+        });
+        nutPhantram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v1 = Double.parseDouble(editText1.getText().toString());
+                ans = v1 * 0.01;
+                nutBang.setEnabled(false);
+                editText2.setText(ans.toString());
+                nutFalse();
+            }
+        });
+        nutAm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v1 = Double.parseDouble(editText1.getText().toString());
+                ans = v1 * (-1);
+                nutBang.setEnabled(false);
+                editText2.setText(ans.toString());
+                nutFalse();
+            }
+        });
+        nutLog10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v1 = Double.parseDouble(editText1.getText().toString());
+                ans = Math.log10(v1);
+                nutBang.setEnabled(false);
+                editText2.setText(ans.toString());
+                nutFalse();
+            }
+        });
+        nutAc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText1.setText("");
+                editText2.setText("");
+            }
+        });
         nutBang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
