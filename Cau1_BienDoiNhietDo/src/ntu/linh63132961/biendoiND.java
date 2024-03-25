@@ -187,4 +187,10 @@ public class biendoiND {
 		double kq = soF + 32 + (5/9);
 		txtKq.setText(String.valueOf(kq));
 	}
+	void xuLyDoFK() {
+		String str_soF = txtC.getText();
+		double soF = Double.parseDouble(str_soF);
+		double kq = (soF - 32) / 1.8 + 273.15;
+		txtKq.setText(String.valueOf(kq));
+	}
 }
