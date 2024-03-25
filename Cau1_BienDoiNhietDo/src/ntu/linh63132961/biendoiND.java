@@ -156,45 +156,5 @@ public class biendoiND {
 		btnReset.setBounds(190, 222, 75, 30);
 		frmPhpBini.getContentPane().add(btnReset);
 	}
-	//khởi tạo hàm
-	void xuLyDoF() {
-		String str_soC = txtC.getText();
-		double soC = Double.parseDouble(str_soC);
-		double kq = soC - (5/9) + 32;
-		txtKq.setText(String.valueOf(kq));
-	}
-	void xuLyDoK() {
-		String str_soC = txtC.getText();
-		double soC = Double.parseDouble(str_soC);
-		double kq = soC + 273.15;
-		txtKq.setText(String.valueOf(kq));
-	}
-	void xuLyDoKC() {
-		String str_soK = txtC.getText();
-		double soK = Double.parseDouble(str_soK);
-		double kq = soK - 273.15;
-		txtKq.setText(String.valueOf(kq));
-	}
-	void xuLyDoKF() {
-		String str_soK = txtC.getText();
-		double soK = Double.parseDouble(str_soK);
-		double kq = (soK - 273.15) * 1.8 + 32;
-		txtKq.setText(String.valueOf(kq));
-	}
-	void xuLyDoFC() {
-		String str_soF = txtC.getText();
-		double soF = Double.parseDouble(str_soF);
-		double kq = soF + 32 + (5/9);
-		txtKq.setText(String.valueOf(kq));
-	}
-	void xuLyDoFK() {
-		String str_soF = txtC.getText();
-		double soF = Double.parseDouble(str_soF);
-		double kq = (soF - 32) / 1.8 + 273.15;
-		txtKq.setText(String.valueOf(kq));
-	}
-	void xuLyReset() {
-		txtC.setText("");
-		txtKq.setText("");
-	}
+	
 }
