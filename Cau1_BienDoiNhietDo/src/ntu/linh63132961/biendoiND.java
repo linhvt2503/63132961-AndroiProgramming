@@ -156,5 +156,11 @@ public class biendoiND {
 		btnReset.setBounds(190, 222, 75, 30);
 		frmPhpBini.getContentPane().add(btnReset);
 	}
-	
+	//khởi tạo hàm
+	void xuLyDoF() {
+		String str_soC = txtC.getText();
+		double soC = Double.parseDouble(str_soC);
+		double kq = soC - (5/9) + 32;
+		txtKq.setText(String.valueOf(kq));
+	}
 }
