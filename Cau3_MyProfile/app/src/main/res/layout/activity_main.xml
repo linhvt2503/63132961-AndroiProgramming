@@ -20,7 +20,8 @@
         android:id="@+id/txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
         android:text="Sinh Viên: Võ Thùy Linh"
         android:textSize="25dp" />
 
@@ -29,16 +30,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
         android:text="MSSV: 63132961"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text=""
         android:textSize="25dp"/>
 
     <Button
         android:id="@+id/btn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:backgroundTint="#048704"
         android:text="Xem chi tiết"
-        android:layout_margin="50dp"
-        android:textSize="25dp"
-        android:backgroundTint="#048704"/>
+        android:textSize="25dp" />
 
 </LinearLayout>
