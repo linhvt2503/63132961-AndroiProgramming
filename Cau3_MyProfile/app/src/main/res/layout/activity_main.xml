@@ -12,7 +12,7 @@
         android:id="@+id/ingvtl"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:srcCompat="@drawable/vtl"
+        android:src="@drawable/vtl"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"/>
 
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:text=""
+        android:inputType="text"
         android:textSize="25dp"/>
 
     <TextView
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:text=""
+        android:inputType="text"
         android:textSize="25dp"/>
 
     <Button
@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="100dp"
+        android:layout_gravity="center"
         android:backgroundTint="#048704"
         android:text="Xem chi tiết"
         android:textSize="25dp" />
