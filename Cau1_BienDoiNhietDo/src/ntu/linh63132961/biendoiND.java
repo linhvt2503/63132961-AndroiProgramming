@@ -175,4 +175,10 @@ public class biendoiND {
 		double kq = soK - 273.15;
 		txtKq.setText(String.valueOf(kq));
 	}
+	void xuLyDoKF() {
+		String str_soK = txtC.getText();
+		double soK = Double.parseDouble(str_soK);
+		double kq = (soK - 273.15) * 1.8 + 32;
+		txtKq.setText(String.valueOf(kq));
+	}
 }
