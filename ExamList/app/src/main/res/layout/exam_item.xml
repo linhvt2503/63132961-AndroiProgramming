@@ -14,46 +14,56 @@
         android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
 
-    <TextView
-        android:id="@+id/txt_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="16dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/img1"
-        android:layout_width="39dp"
-        android:layout_height="33dp"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="48dp"
-        tools:srcCompat="@tools:sample/avatars" />
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txt_note"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="62dp" />
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="39dp"
+                android:layout_height="33dp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="48dp"
+                tools:srcCompat="@tools:sample/avatars" />
 
-    <ImageView
-        android:id="@+id/img2"
-        android:layout_width="39dp"
-        android:layout_height="34dp"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="100dp"
-        tools:srcCompat="@tools:sample/avatars" />
+            <TextView
+                android:id="@+id/txt_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="62dp" />
 
-    <TextView
-        android:id="@+id/txt_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="115dp" />
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="39dp"
+                android:layout_height="34dp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="100dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
