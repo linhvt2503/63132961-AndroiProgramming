@@ -8,11 +8,11 @@
 
     <item
         android:id="@+id/search"
-        android:icon="@drawable/search"
+        android:icon="@drawable/sreach"
         android:title="Search" />
 
     <item
         android:id="@+id/profile"
-        android:icon="@drawable/profice"
+        android:icon="@drawable/profile"
         android:title="Profile" />
 </menu>
