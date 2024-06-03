@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1a2d947-30df-4e42-a7d5-d1d63467895b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../CK/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CK/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/androidTest/java/linhvothuy/l63132961/linhck/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/java/linhvothuy/l63132961/linhck/Cau1Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/java/linhvothuy/l63132961/linhck/Cau2Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/java/linhvothuy/l63132961/linhck/Cau3Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/java/linhvothuy/l63132961/linhck/Cau4Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/java/linhvothuy/l63132961/linhck/HomeFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/java/linhvothuy/l63132961/linhck/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/layout/fragment_cau1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/layout/fragment_cau2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/layout/fragment_cau3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/layout/fragment_cau4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/menu/menu_baithi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/app/src/test/java/linhvothuy/l63132961/linhck/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LinhCK/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activity/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Activity/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExamList/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExamList/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VD_SQL/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VD_SQL/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2h23rDAygJr3B2MyDmda1CwOlR6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Documents/GitHub/63132961-AndroiProgramming/Cau1_BienDoiNhietDo"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1a2d947-30df-4e42-a7d5-d1d63467895b" name="Changes" comment="" />
+      <created>1716778542250</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716778542250</updated>
+    </task>
+    <servers />
+  </component>
+</project>
